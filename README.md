@@ -1,0 +1,1 @@
+I'm doint price check comparison
