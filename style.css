@@ -1,0 +1,139 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+:root {
+    --accent-color: #641BFF;
+    --heading-font-family: 'Poppins', sans-serif;
+    --body-font-family: 'Lato', sans-serif;
+}
+
+body {
+    margin: 0;
+    background-color: #F8F9FB;
+    min-width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: var(--body-font-family);
+}
+
+.price-check {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    width: 100%;
+    margin: 1rem;
+}
+
+.column {
+    background-color: white;
+    box-shadow: 0 7px 30px rgba(52, 31, 97, 0.1);
+    padding: 2rem;
+    flex-grow: 1;
+    flex-basis: 0;
+    max-width: 275px;
+    border-radius: 8px;
+}
+
+.price-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: var(--heading-font-family);
+    font-weight: bold;
+}
+
+.price {
+    display: flex;
+    font-size: 3.5rem;
+}
+
+.dolar {
+    font-size: 1.5rem;
+    margin-top: .3rem;
+    margin-right: .1rem;
+}
+
+.per-month {
+    font-size: 1rem;
+    text-transform: uppercase;
+    align-self: flex-end;
+    margin-bottom: .8rem;
+}
+
+.plan {
+    font-size: .9rem;
+    text-transform: uppercase;
+    margin-top: 1rem;
+}
+
+.popular {
+    background-color: var(--accent-color);
+    color: white;
+    position: relative;
+    margin-top: -1.5rem;
+    padding-top: 3.5rem;
+    margin-bottom: -1.5rem;
+    padding-bottom: 3.5rem;
+}
+
+.divider {
+    width: 90%;
+    margin: 0 auto;
+    height: 1px;
+    background-color: rgba(0, 0, 0, .2);
+    margin: 2rem 0;
+}
+
+.feature {
+    display: flex;
+    align-items: center;
+    margin: .5rem;
+}
+
+.line-through {
+    text-decoration: line-through;
+    color: #999;
+}
+
+.feature img {
+    height: 1.1em;
+    width: 1.1em;
+    margin-right: .5rem;
+}
+
+button {
+    border: none;
+    background-color: var(--accent-color);
+    color: white;
+    width: 100%;
+    padding: 1rem;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 10px;
+    margin-top: 2rem;
+    cursor: pointer;
+    transition: transform 200ms ease-in-out;
+}
+
+button:hover, button:focus {
+    transform: scale(1.1);
+}
+
+#popular-btn {
+    background-color: white;
+    color: var(--accent-color);
+}
+
+.popular-info {
+    position: absolute;
+    right: .5rem;
+    top: .5rem;
+    background-color: #ffbf69;
+    padding: .3rem;
+    font-size: 0.8em;
+    color: #bb6e03;
+    border-radius: 8px;
+}
